@@ -1,0 +1,34 @@
+########################## React (via simpliLearn) ###########################
+I. What is React? ---------------------------->
+    > React is a JavaScript-based UI development library that was created by 
+    Facebook in 2013. It is one of the most commonly used frontend libraries 
+    for web development. 
+
+
+II. Why React? --------------------------------->
+    > It is easy to create dynamic web applications with React because it often
+    requires less code and offers more functionality. 
+
+    > It uses the virtualDOM. The virtualDOM only updates the states on the real 
+    DOM if they were changed on the virtualDOM.
+
+    > It offers reusable components. Components are the building blocks of React. 
+    A single app consists of multiple components that can be reused throughout
+    the application, shortening the development time. 
+
+    > Unidirectional data flow. Developers often nest child components inside of 
+    parent components, making the data flow in a single direction. This makes it 
+    easier to debug errors.
+
+    > React can be used to build web or mobile applications. React Native is the 
+    framework that allows us to build for mobile. 
+
+
+III. Features of React --------------------------->
+    > JSX: JavaScript syntactic extension; describes how the UI should appear.
+    Allows us to write HTML structures within the same JS file; embeds HTML
+    into JS code. 
+
+
+IV. Components in React --------------------------->
+    > Components represent a part of the user interface. 

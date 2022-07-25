@@ -11,3 +11,27 @@ const element = <h1>Hello, {name}</h1>;
    attribute. */
 const element2 = <a href="https://www.reactjs.org"> link </a>;
 const element3 = <img src={user.avatarUrl}></img>;
+
+
+// Rendering Elements ------------------------------------------->
+/* An element describes what you want to see on the screen. */
+const element4 = <h1>Hello, world</h1>;
+
+
+// Function and Class Components -------------------------------->
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+
+// OR
+
+class Welcome extends React.Component {
+    render() {
+      return <h1>Hello, {this.props.name}</h1>;
+    }
+  }
+
+// Rendering a Component ----------------------------------------->
+const element5 = <Welcome name="Sara" />;
+
+

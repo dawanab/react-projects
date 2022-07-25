@@ -1,0 +1,27 @@
+############################## STATE ##################################
+> React state holds the data for a component. The component then returns the 
+data that's contained within the state to the output. 
+
+I. What is 'state' in ReactJS? -------------------------------->
+    > State is a built-in object that contains data about the component. A 
+    compoenent's state can change over time, and when it does, the component 
+    re-renders. State change can happen with user responses, or system-generated
+    events, and this determines the behavior and how the componenet will render.
+
+    > State can be modified via user interaction or system-generated.
+    > When the state changes, the component is re-rendered.
+    > The state object is initialized in the constructor.
+    > It can store multiple properties.
+    > this.setState() is used to change the value of the state object.
+    > setState() funnction performs a merge between the new and prev state.
+
+
+II. The setState() Method -------------------------------------->
+    > State can be updated in response to event hanndlers or prop changes. This
+    is done via setState() method. It queues all of the updates made to the 
+    compoenent state, and then directs React to re-render the component and 
+    its children with the updated state. 
+
+    > You should always use the setState() method to change the object's state,
+    because it ensures the componenet knows it's been updated and it can 
+    then call the render() method. 

@@ -31,4 +31,58 @@ III. Features of React --------------------------->
 
 
 IV. Components in React --------------------------->
-    > Components represent a part of the user interface. 
+    > Components represent a part of the user interface. The UI is separated into
+    numerous components, and each component has its own set of properties and 
+    functions. 
+        ** A component used in one area can be reused in another area
+        ** A component can containn several other components.
+        ** A component must at least have a render() method that specifies how
+        the component renders to the DOM. 
+        ** A component can receive props (properties); they are passed by its 
+        parent to specify values. 
+
+    > Export default is used to export only one object from the file (function, 
+    variable, class). Only one default export per file is allowed. 
+
+
+V. Props in React ---------------------------------->
+    > Props allow the user to pass arguemnts or data to the components. This is 
+    what makes the components dynamic. They are read-only and can't be changed. 
+
+
+VI. State in React ---------------------------------->
+    > State is an object that stores a component's properties values
+    that could change over time. 
+        ** State can be changed because of a user's action or network changes
+        ** The component is re-rendered when state changes 
+        ** setState() is used to alter the state object's value 
+
+VII. setState() Method ------------------------------>
+    > State can be updated to event handlers, server responses, or changes to 
+    the props. 
+
+VIII. Props vs. State -------------------------------->
+    > Props - sends data and event handlers to a component's children
+    > State - the data of the components that must be presented to it, store 
+    the view in the state 
+
+    > Props - immutable; can't be modified after they've been set
+    > State - the data is stired in state, which may change over time 
+
+    > Props - both functional and class components can benefit from props
+    > State - only class compoenents can use state 
+
+    > Props - the parent compoenent sets props for the children compoenents
+    > State - event handlers are typically responsible for updating state 
+
+
+
+
+
+
+
+
+
+
+Sources: 
+Sufiyan, T. (2021, November 11). A beginners guide to react props. Simplilearn.com. Retrieved July 24, 2022, from https://www.simplilearn.com/tutorials/reactjs-tutorial/react-props 

@@ -1,0 +1,26 @@
+########################### PROPS ############################### 
+Props provide us with a way to pass information between components in React;
+They are arguments passed into react components.
+
+I. Props in ReactJS ---------------------------------------------->
+    > Because React is a component based library, the UI is divided into small, 
+    resuable pieces. In order for these components to be able to pass data to 
+    and from one another, we need to use props. 
+
+    > Props are read-only. That means that the data coming from a parent component cannot be changed by the child component. 
+
+II. Using Props --------------------------------------------------->
+    > There are three steps that we need to follow in order to use props:
+        1. Define an attribute and its value
+        2. Pass it to a child component or components by using props 
+        3. Render the props data. 
+
+    > We can add props like we pass an argument to a function. 
+
+
+
+
+
+
+Sources: 
+Sufiyan, T. (2021, November 11). A beginners guide to react props. Simplilearn.com. Retrieved July 24, 2022, from https://www.simplilearn.com/tutorials/reactjs-tutorial/react-props 

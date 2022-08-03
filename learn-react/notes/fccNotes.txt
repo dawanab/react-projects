@@ -37,6 +37,32 @@ RENDER STATE IN THE UI ---------------------------------------------------->
     state. It's state is local to that component, unless you pass state data
     to a child component as props. 
 
+SET STATE WITH this.setState () ------------------------------------------>
+    > React provides a method for updating component state called setState.
+    > You call the setState method within your component class such as:
+    this.setState(), passing in an object with key-value pairs. The keys 
+    are the state properties and the values are the updated state data. 
+    > React expects you to never modify state directly, instead use 
+    this.setState() when state changes occur. 
+
+
+BIND 'THIS' TO A CLASS METHOD -------------------------------------------->
+    > A class method typically needs to use the this keyword so it can 
+    access properties on the class (such as state and props) inside the scope
+    of the method.
+        1. One common way is to explicitly bind this in the constructor so 
+        this becomes bound to the class methods when the componenet is 
+        initialized: this.handleClick = this.handleClick.bind(this);
+
+
+USE STATE TO TOGGLE AN ELEMENT ------------------------------------------->
+    > Sometimes you might need to know the previous state when updating the 
+    state. So you should pass setState a function that allows you to access
+    state and props. Using a function with setState guarantees you are 
+    working with the most current values of state and props. You have to
+    wrap the object literal in parentheses, otherwise JS thinks its a block
+    of code. (example in 'simple-counter' direcotry)
+
 
 
 
@@ -53,4 +79,5 @@ RENDER STATE IN THE UI ---------------------------------------------------->
 
 REFERENCES:
 FreeCodeCamp.org freecodecamp.org (n.d). retrieved August 2, 2022 from 
-https://www.freecodecamp.org/learn/front-end-development-libraries/react/set-state-with-this-setstate
+https://www.freecodecamp.org/learn/front-end-development-libraries/react
+/set-state-with-this-setstate

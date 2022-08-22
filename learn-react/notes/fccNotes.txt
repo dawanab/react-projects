@@ -64,6 +64,59 @@ USE STATE TO TOGGLE AN ELEMENT ------------------------------------------->
     of code. (example in 'simple-counter' direcotry)
 
 
+PASS STATE AS PROPS TO CHILD COMPONENTS ---------------------------------->
+    > Unidirectional data flow - state flows in one direction down the tree  
+    of your application's componenets, from the stateful parent componenet  
+    to child componenets. The child componenets only receive the state data
+    they need. 
+
+
+PASS A CALLBACK AS PROPS ------------------------------------------------->
+    > You can pass state as props, handler functions, or any method that's
+    defined on a React component to child components. This is how you allow
+    child componenets to interact with their parent componenets. 
+
+
+USE THE LIFECYCLE METHOD componenetWillMount ----------------------------->
+    > React componenets have several methods that provide opportunities to 
+    perform actions at specific points in the lifecycle of a componenet.
+    These are called lifecycle methods, or lifecycle hooks, and allow you 
+    to catch componenets at certain points in time. This can be before they 
+    are rendered, before they update, before they receive props, before they
+    unmount, and so on. 
+        > componenetWillMount()     > shouldComponentUpdate()                   > componentWillUnMount()    > componenetDidMount()      
+        > componenetDidUpdate()
+
+    > The componenetWillMount lifecycle method is called before the render() 
+    method when a componenet is being mounted to the DOM. 
+
+
+USE THE LIFECYCLE METHOD componenetDidMount ------------------------------->
+    > The best pracrice with React is to place API calls or any calls to your 
+    server in the lifecycle method componenetDidMount(). This method is called 
+    after a componenet is mounted to the DOM. 
+    > Any calls to setState() here will trigger a re-rendering of your component.
+    When you call an API in this method, and set your state with the data that 
+    the API returns, it will automatically trigger an update once you receive
+    the data. 
+
+    > componentDidMount is also a good place to place any event listeners you
+    need to add for specific functionality. 
+
+
+ADD EVENT LISTENERS -------------------------------------------------------->
+    > React provides a synthetic event system which wraps the native event 
+    system present in browsers. This means that the synthetic event system
+    behaves the same regardless of the user's browser. 
+
+
+OPTIMIZE RE-RENDERS WITH shouldComponentUpdate ----------------------------->
+    > shouldComponentUpdate() is used when child components receive new state 
+    or props, and allows us to specifically decide if the components should 
+    update or not. It takes nextProps and nextState as parameters. The method 
+    should return a boolean value that tells React to update the component 
+    or not. 
+    > This method is useful to optimize performance. 
 
 
 

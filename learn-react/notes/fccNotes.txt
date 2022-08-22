@@ -1,16 +1,15 @@
 USING PROPS WITH STATELESS FUNCTIONAL CCOMPONENTS ------------------------>
     > A stateless functional component is any function you write which 
     accepts props and returns JSX. 
-
     > A stateless component is a class that extends React.Component, but does 
     not use internal state.
 
     > A stateful component is a class component that does maintain its own 
-    internal state; referred to a React components. 
+    internal state; referred to as React components. 
 
 
 CREATE A STATEFUL COMPONENT ----------------------------------------------->
-    > State consists of any data your application needs to know about, that 
+    > State consists of any data your application needs to know about that 
     can change over time. 
     > You want your apps to respond to state changes and present an updated 
     UI when necessary. 
@@ -60,8 +59,8 @@ USE STATE TO TOGGLE AN ELEMENT ------------------------------------------->
     state. So you should pass setState a function that allows you to access
     state and props. Using a function with setState guarantees you are 
     working with the most current values of state and props. You have to
-    wrap the object literal in parentheses, otherwise JS thinks its a block
-    of code. (example in 'simple-counter' direcotry)
+    wrap the object literal in parentheses, otherwise JS thinks it's a block
+    of code. (example in 'simple-counter' directory).
 
 
 PASS STATE AS PROPS TO CHILD COMPONENTS ---------------------------------->
@@ -77,6 +76,7 @@ PASS A CALLBACK AS PROPS ------------------------------------------------->
     child componenets to interact with their parent componenets. 
 
 
+ 🌈 /*  topics ---> lifecycle-methods    */
 USE THE LIFECYCLE METHOD componenetWillMount ----------------------------->
     > React componenets have several methods that provide opportunities to 
     perform actions at specific points in the lifecycle of a componenet.
@@ -84,7 +84,8 @@ USE THE LIFECYCLE METHOD componenetWillMount ----------------------------->
     to catch componenets at certain points in time. This can be before they 
     are rendered, before they update, before they receive props, before they
     unmount, and so on. 
-        > componenetWillMount()     > shouldComponentUpdate()                   > componentWillUnMount()    > componenetDidMount()      
+        > componenetWillMount()     > shouldComponentUpdate()
+        > componentWillUnMount()    > componenetDidMount()      
         > componenetDidUpdate()
 
     > The componenetWillMount lifecycle method is called before the render() 
@@ -118,7 +119,17 @@ OPTIMIZE RE-RENDERS WITH shouldComponentUpdate ----------------------------->
     or not. 
     > This method is useful to optimize performance. 
 
+ 🌈 /*  topics ---> inline-styles   */
+INTRODUCTING INLINE STYLES ------------------------------------------------->
+    > If you import styles from a stylesheet, it isn't much different from 
+    styling HTML. You apply a class to your JSX element using the className
+    attribute, and apply styles to the class in yout stylesheet. Another 
+    option is inline styles. 
+    > JSX elements use the style attribute, but you set the value equal to 
+    a JS object: <div style={{color: "yellow", fontSize: 16}}>Mellow Yellow</div>
 
+
+ADD INLINE STYLES IN REACT ------------------------------------------------->
 
 
 

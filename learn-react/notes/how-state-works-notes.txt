@@ -1,0 +1,64 @@
+🟢 Introduction to State in React 
+    > State allows us to manage changing data in an application. It's defined 
+    as an object where we define key-value pairs specifying various data we 
+    want to track in the application. 
+
+    > You can create a class component by using the ES6 keyword 'class' and 
+    by extending the React class 'Component'. 
+
+    > Never directly update/mutate state in React. It's bad practice and your
+    component will not be re-rendered on state change if you make a direct 
+    state change. 
+
+
+🟢 Syntax of setState 
+    > To make the state change, use the setState function that update the value 
+    of the state.
+
+    > The syntax is: setState(updater, [callback])
+        >>> updater - can either be a function or an object 
+        >>> callback - is an optional function that gets executed once the 
+        state is successfully updated. 
+
+    > Calling setState automatically re-renders the entire component and all 
+    its child components. 
+
+    > The setState function is asynchronous in nature. 
+
+    > componenetDidUpdate syntax is as follows:
+        componentDidUpdate(prevProps, prevState) {
+            if (prevState.counter !== this.state.counter) {
+                // do something
+                console.log("counter", this.state.counter);
+            }
+        }
+
+
+🟢 How to Simplify State and Method Declaration 
+    > Arrow functions do not have their own 'this' context, so it will take 
+    the context as the class so there is no need to use the .bind method. 
+    > This makes the code simpler because we don't need to keep binding 
+    every event handler. 
+    > If we wrap our object in round brackets, it will implicitly return
+    if we use a single statement in an arrow function on one line:
+        this.setState((prevState) => ({ counter: prevState.counter + 1 }));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    SOURCES: https://www.freecodecamp.org/news/what-is-state-in-react-explained-with-examples/
